@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF49D986-8384-4403-B8CA-18CACD13F062}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Assimp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>FbxSdkConverter</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\Lumpen1\Documents\Visual Studio 2013\Projects\AssimpBinaries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Users\Lumpen1\Documents\Visual Studio 2013\Projects\AssimpBinaries\Lib\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Documents\VS 2015\BulletPhysicsEngine\src;D:\Documents\VS 2015\AssimpBinaries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp-vc140-mtd.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;Bullet3Common_Debug.lib;Bullet3Geometry_Debug.lib;ConvexDecomposition_Debug.lib;HACD_Debug.lib;LinearMath_Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Documents\VS 2015\BulletPhysicsEngine\lib\Debug;D:\Documents\VS 2015\AssimpBinaries\code\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\DirectX12\DirectXTex-master\DirectXTex;C:\Program Files\Autodesk\FBX\FBX SDK\2020.2.1\include;C:\SimpleGameEngineDependencies\v-hacd-master\src\VHACD_Lib\public;C:\SimpleGameEngineDependencies\v-hacd-master\src\VHACD_Lib\inc;C:\DirectX12\DirectXTK12-master\Inc;C:\SimpleGameEngineDependencies\bullet3-3.17\src;D:\Documents\VS 2015\BulletPhysicsEngine\src;C:\DirectX12\assimp_build\include;C:\DirectX12\assimp\include;C:\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Program Files\Autodesk\FBX\FBX SDK\2020.2.1\lib\vs2019\x64\$(Configuration)\libfbxsdk-mt.lib;C:\Program Files\Autodesk\FBX\FBX SDK\2020.2.1\lib\vs2019\x64\$(Configuration)\libxml2-mt.lib;C:\Program Files\Autodesk\FBX\FBX SDK\2020.2.1\lib\vs2019\x64\$(Configuration)\zlib-mt.lib;assimp-vc142-mtd.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;Bullet3Common_Debug.lib;Bullet3Geometry_Debug.lib;ConvexDecomposition_Debug.lib;HACD_Debug.lib;LinearMath_Debug.lib;BulletFileLoader_Debug.lib;Bullet2FileLoader_Debug.lib;BulletWorldImporter_Debug.lib;DirectXTK12.lib;C:\DirectX12\DirectXTex-master\DirectXTex\Bin\Desktop_2019_Win10\x64\Debug\DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\SimpleGameEngineDependencies\v-hacd-master_build\VHACD_Lib\Debug;C:\DirectX12\DirectXTK12-master\Bin\Desktop_2019_Win10\x64\Debug;C:\SimpleGameEngineDependencies\bullet3-3.17_build\lib\Debug;C:\DirectX12\assimp_build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\SimpleGameEngineDependencies\assimp-5.0.1_build\include;C:\SimpleGameEngineDependencies\bullet3-3.17\src;C:\SimpleGameEngineDependencies\assimp-5.0.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\SimpleGameEngineDependencies\bullet3-3.17_build\lib\Release;C:\SimpleGameEngineDependencies\assimp-5.0.1_build\code\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp-vc142-mt.lib;BulletCollision.lib;BulletDynamics.lib;Bullet3Geometry.lib;Bullet3Common.lib;ConvexDecomposition.lib;HACD.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files\Autodesk\FBX\FBX SDK\2020.2.1\include;C:\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src;C:\DirectX12\DirectXTK12-master\Inc;C:\SimpleGameEngineDependencies\bullet3-3.17\src;C:\SimpleGameEngineDependencies\assimp-master_build\include;C:\SimpleGameEngineDependencies\assimp-master\include;C:\SimpleGameEngineDependencies\v-hacd-master\src\VHACD_Lib\public;C:\SimpleGameEngineDependencies;C:\SimpleGameEngineDependencies\cereal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\DirectX12\assimp_build\lib\Release;C:\DirectX12\DirectXTK12-master\Bin\Desktop_2019_Win10\x64\Release;C:\SimpleGameEngineDependencies\v-hacd-master_build\VHACD_Lib\Release;C:\SimpleGameEngineDependencies\bullet3-3.17_build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files\Autodesk\FBX\FBX SDK\2020.2.1\lib\vs2019\x64\$(Configuration)\libfbxsdk-mt.lib;C:\Program Files\Autodesk\FBX\FBX SDK\2020.2.1\lib\vs2019\x64\$(Configuration)\libxml2-mt.lib;C:\Program Files\Autodesk\FBX\FBX SDK\2020.2.1\lib\vs2019\x64\$(Configuration)\zlib-mt.lib;assimp-vc142-mt.lib;BulletCollision.lib;BulletDynamics.lib;Bullet3Geometry.lib;Bullet3Common.lib;ConvexDecomposition.lib;HACD.lib;LinearMath.lib;BulletFileLoader.lib;Bullet2FileLoader.lib;BulletWorldImporter.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src\DataContainerParser.cpp" />
+    <ClCompile Include="..\..\..\..\..\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src\DataContainerSection.cpp" />
+    <ClCompile Include="..\..\..\..\..\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src\DataFileContainer.cpp" />
+    <ClCompile Include="..\..\..\..\..\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src\TransformNode.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ModelLoaderClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src\DataContainerParser.h" />
+    <ClInclude Include="..\..\..\..\..\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src\DataContainerSection.h" />
+    <ClInclude Include="..\..\..\..\..\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src\DataFileContainer.h" />
+    <ClInclude Include="..\..\..\..\..\DirectX12\DX12Engine - Kopie - Kopie - Kopie\DX12Engine\Src\TransformNode.h" />
+    <ClInclude Include="AnimatedMesh.h" />
+    <ClInclude Include="AnimationStuff.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="ModelLoaderClass.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

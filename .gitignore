@@ -7,9 +7,11 @@
 *.o
 *.obj
 
+
 # Precompiled Headers
 *.gch
 *.pch
+*.ipch
 
 # Compiled Dynamic libraries
 *.so
@@ -30,3 +32,33 @@
 *.exe
 *.out
 *.app
+
+.vs/Assimp/v16/Browse.VC.db
+.vs/Assimp/v16/Browse.VC.db-shm
+.vs/Assimp/v16/Browse.VC.db-wal
+.vs/Assimp/v16/Browse.VC.opendb
+.vs/Assimp/v16/Solution.VC.db
+.vs/Assimp/v16/Solution.VC.db-shm
+.vs/Assimp/v16/Solution.VC.db-wal
+<<<<<<< Updated upstream
+.vs/Assimp/v17/.suo
+.vs/Assimp/v17/Browse.VC.db
+.vs/Assimp/v17/Solution.VC.db
+=======
+.vs/Assimp/v16/.suo
+.vs/Assimp/v17/.suo
+.vs/Assimp/v17/Browse.VC.db
+>>>>>>> Stashed changes
+.vs/Assimp/v17/Browse.VC.db-shm
+.vs/Assimp/v17/Browse.VC.db-wal
+.vs/Assimp/v17/Browse.VC.opendb
+.vs/Assimp/v17/fileList.bin
+<<<<<<< Updated upstream
+.vs/Assimp/v17/Solution.VC.db-shm
+.vs/Assimp/v17/Solution.VC.db-wal
+=======
+.vs/Assimp/v17/Solution.VC.db
+.vs/Assimp/v17/Solution.VC.db-shm
+.vs/Assimp/v17/Solution.VC.db-wal
+.vs/Assimp/v16/.suo
+>>>>>>> Stashed changes
